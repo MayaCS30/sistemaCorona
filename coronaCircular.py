@@ -1,8 +1,13 @@
+print("==================")
 print("Corona Circular")
+print("==================")
+print("")
 radio_ma = float(input("Ingrese radio mayor: "))
-radio_ma = float(input("Ingrese radio menor: "))
+radio_me = float(input("Ingrese radio menor: "))
 
 area = 3.1416*(radio_ma**2  - radio_me**2)
-
+perimetro = (2*3.1416)*(radio_ma + radio_me)
+print("")
 print("RESULTADO")
-print("Área: ",area)          
+print("Área: ",area.__round__(2)) 
+print("Perimetro: ",perimetro.__round__(2))         
